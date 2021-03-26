@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Weather</title>
+    <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.css">
+  </head>
+  <body>
+
+    <!-- TODO: Put your HTML code in here -->
+    <form id="search" action="search">
+       <!--  <input id="text" class="form-control" type="text"> -->
+        <select id="city-input" class="select2" name="city"></select>
+        <input id="submit" type="submit"name="" class="btn btn-primary" value="Weather!">
+    </form>
+
+   <a href="">Current</a>
+
+    <div class="card">
+      <h1 id="heading">Weather in </h1>
+      <h2 id="date"></h2>
+      <p id="description"></p>
+      <div class="iconTemp">
+        <span><img id="image" alt=""></span>
+        <p id="temperature"></p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
